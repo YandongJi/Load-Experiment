@@ -6,6 +6,7 @@ HR_4=[output1(1,4) output2(1,4) output3(1,4) output5(1,4) output6(1,4)];
 HR_5=[output1(1,5) output2(1,5) output3(1,5) output5(1,5) output6(1,5)];
 HR_6=[output1(1,6) output2(1,6) output3(1,6) output5(1,6) output6(1,6)];
 HR_7=[output1(1,7) output2(1,7) output3(1,7) output5(1,7) output6(1,7)];
+HR=[HR_1;HR_2;HR_3;HR_4;HR_5;HR_6;HR_7];
 Meta_1=[output1(2,1) output2(2,1) output3(2,1) output4(1,1) output5(2,1) output6(2,1)];
 Meta_2=[output1(2,2) output2(2,2) output3(2,2) output4(1,2) output5(2,2) output6(2,2)];
 Meta_3=[output1(2,3) output2(2,3) output3(2,3) output4(1,3) output5(2,3) output6(2,3)];
@@ -13,6 +14,7 @@ Meta_4=[output1(2,4) output2(2,4) output3(2,4) output4(1,4) output5(2,4) output6
 Meta_5=[output1(2,5) output2(2,5) output3(2,5) output4(1,5) output5(2,5) output6(2,5)];
 Meta_6=[output1(2,6) output2(2,6) output3(2,6) output4(1,6) output5(2,6) output6(2,6)];
 Meta_7=[output1(2,7) output2(2,7) output3(2,7) output4(1,7) output5(2,7) output6(2,7)];
+Meta=[Meta_1;Meta_2;Meta_3;Meta_4;Meta_5;Meta_6;Meta_7];
 HR_mean_1=mean(HR_1);
 HR_mean_2=mean(HR_2);
 HR_mean_3=mean(HR_3);
@@ -28,6 +30,39 @@ Meta_mean_4=mean(Meta_4);
 Meta_mean_5=mean(Meta_5);
 Meta_mean_6=mean(Meta_6);
 Meta_mean_7=mean(Meta_7);
+
+
+
+personHR=zeros(6,7);
+personMeta=zeros(6,7);
+for i=1:6
+        if i<4
+           personHR(i,:)=HR(:,i)';
+           figure;
+           bar(personHR(i,:));
+           ylim([80 200]);
+           title(['Subject ' num2str(i) ' HR Data']);
+           set(gca,'xticklabel',{'Static', '0deg.', '5deg.', '10deg.', '3km/h', '5km/h', '7km/h'});
+           ylabel('times/min');
+        elseif i>4
+           personHR(i,:)=HR(:,i-1)';
+           figure;
+           bar(personHR(i,:));
+           ylim([80 200]);
+           title(['Subject ' num2str(i) ' HR Data']);
+           set(gca,'xticklabel',{'Static', '0deg.', '5deg.', '10deg.', '3km/h', '5km/h', '7km/h'});
+           ylabel('times/min');
+        end
+    personMeta(i,:)=Meta(:,i)';
+    figure;
+    bar(personMeta(i,:));
+    ylim([0 900]);
+    title(['Subject ' num2str(i) ' Metabolic Cost Data']);
+    set(gca,'xticklabel',{'Static', '0deg.', '5deg.', '10deg.', '3km/h', '5km/h', '7km/h'});
+    ylabel('Watts');
+end
+
+
 
 
 figure;

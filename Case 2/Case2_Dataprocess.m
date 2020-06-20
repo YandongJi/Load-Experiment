@@ -1,17 +1,17 @@
-% output1
-load('D:\Lab\Loads Experiment\Case_2\Deng\rec1_735.mat')
-load('D:\Lab\Loads Experiment\Case_2\Deng\rec1_736.mat')
-load('D:\Lab\Loads Experiment\Case_2\Deng\rec1_737.mat')
-load('D:\Lab\Loads Experiment\Case_2\Deng\rec1_738.mat')
-load('D:\Lab\Loads Experiment\Case_2\Deng\rec1_739.mat')
-load('D:\Lab\Loads Experiment\Case_2\Deng\rec1_727.mat')
-load('D:\Lab\Loads Experiment\Case_2\Deng\rec1_728.mat')
-load('D:\Lab\Loads Experiment\Case_2\Deng\rec1_729.mat')
-load('D:\Lab\Loads Experiment\Case_2\Deng\rec1_730.mat')
-load('D:\Lab\Loads Experiment\Case_2\Deng\rec1_731.mat')
-load('D:\Lab\Loads Experiment\Case_2\Deng\rec1_732.mat')
-load('D:\Lab\Loads Experiment\Case_2\Deng\rec1_733.mat')
-load('D:\Lab\Loads Experiment\Case_2\Deng\rec1_734.mat')
+%% output1
+load('F:\Lab\Loads Experiment\Case_2\Deng\rec1_735.mat')
+load('F:\Lab\Loads Experiment\Case_2\Deng\rec1_736.mat')
+load('F:\Lab\Loads Experiment\Case_2\Deng\rec1_737.mat')
+load('F:\Lab\Loads Experiment\Case_2\Deng\rec1_738.mat')
+load('F:\Lab\Loads Experiment\Case_2\Deng\rec1_739.mat')
+load('F:\Lab\Loads Experiment\Case_2\Deng\rec1_727.mat')
+load('F:\Lab\Loads Experiment\Case_2\Deng\rec1_728.mat')
+load('F:\Lab\Loads Experiment\Case_2\Deng\rec1_729.mat')
+load('F:\Lab\Loads Experiment\Case_2\Deng\rec1_730.mat')
+load('F:\Lab\Loads Experiment\Case_2\Deng\rec1_731.mat')
+load('F:\Lab\Loads Experiment\Case_2\Deng\rec1_732.mat')
+load('F:\Lab\Loads Experiment\Case_2\Deng\rec1_733.mat')
+load('F:\Lab\Loads Experiment\Case_2\Deng\rec1_734.mat')
 condition1_HR=rms(rec1_727.Y(47).Data(end - 90000 + 1:1:end));
 condition1_Meta=rms(0.278.*rec1_727.Y(50).Data(end - 90000 + 1:1:end)+0.075.*rec1_727.Y(51).Data(end - 90000 + 1:1:end));
 condition2_HR=rms(rec1_728.Y(47).Data(end - 90000 + 1:1:end));
@@ -56,21 +56,21 @@ condition7_Meta_AVERAGE=condition7_Meta;
 
 output1=[condition1_HR_AVERAGE condition2_HR_AVERAGE condition3_HR_AVERAGE condition4_HR_AVERAGE condition5_HR_AVERAGE condition6_HR_AVERAGE condition7_HR_AVERAGE; condition1_Meta_AVERAGE condition2_Meta_AVERAGE condition3_Meta_AVERAGE condition4_Meta_AVERAGE condition5_Meta_AVERAGE condition6_Meta_AVERAGE condition7_Meta_AVERAGE];
 
-% output2
-load('D:\Lab\Loads Experiment\Case_2\Dong\rec1_720.mat')
-load('D:\Lab\Loads Experiment\Case_2\Dong\rec1_721.mat')
-load('D:\Lab\Loads Experiment\Case_2\Dong\rec1_722.mat')
-load('D:\Lab\Loads Experiment\Case_2\Dong\rec1_723.mat')
-load('D:\Lab\Loads Experiment\Case_2\Dong\rec1_724.mat')
-load('D:\Lab\Loads Experiment\Case_2\Dong\rec1_725.mat')
-load('D:\Lab\Loads Experiment\Case_2\Dong\rec1_726.mat')
-load('D:\Lab\Loads Experiment\Case_2\Dong\rec1_713.mat')
-load('D:\Lab\Loads Experiment\Case_2\Dong\rec1_714.mat')
-load('D:\Lab\Loads Experiment\Case_2\Dong\rec1_715.mat')
-load('D:\Lab\Loads Experiment\Case_2\Dong\rec1_716.mat')
-load('D:\Lab\Loads Experiment\Case_2\Dong\rec1_717.mat')
-load('D:\Lab\Loads Experiment\Case_2\Dong\rec1_718.mat')
-load('D:\Lab\Loads Experiment\Case_2\Dong\rec1_719.mat')
+%% output2
+load('F:\Lab\Loads Experiment\Case_2\Dong\rec1_720.mat')
+load('F:\Lab\Loads Experiment\Case_2\Dong\rec1_721.mat')
+load('F:\Lab\Loads Experiment\Case_2\Dong\rec1_722.mat')
+load('F:\Lab\Loads Experiment\Case_2\Dong\rec1_723.mat')
+load('F:\Lab\Loads Experiment\Case_2\Dong\rec1_724.mat')
+load('F:\Lab\Loads Experiment\Case_2\Dong\rec1_725.mat')
+load('F:\Lab\Loads Experiment\Case_2\Dong\rec1_726.mat')
+load('F:\Lab\Loads Experiment\Case_2\Dong\rec1_713.mat')
+load('F:\Lab\Loads Experiment\Case_2\Dong\rec1_714.mat')
+load('F:\Lab\Loads Experiment\Case_2\Dong\rec1_715.mat')
+load('F:\Lab\Loads Experiment\Case_2\Dong\rec1_716.mat')
+load('F:\Lab\Loads Experiment\Case_2\Dong\rec1_717.mat')
+load('F:\Lab\Loads Experiment\Case_2\Dong\rec1_718.mat')
+load('F:\Lab\Loads Experiment\Case_2\Dong\rec1_719.mat')
 condition1_HR=rms(rec1_713.Y(47).Data(end - 90000 + 1:1:end));
 condition1_Meta=rms(0.278.*rec1_713.Y(50).Data(end - 90000 + 1:1:end)+0.075.*rec1_713.Y(51).Data(end - 90000 + 1:1:end));
 condition2_HR=rms(rec1_714.Y(47).Data(end - 90000 + 1:1:end));
@@ -117,21 +117,21 @@ condition7_Meta_AVERAGE=(condition7_Meta+condition8_Meta)/2;
 
 output2=[condition1_HR_AVERAGE condition2_HR_AVERAGE condition3_HR_AVERAGE condition4_HR_AVERAGE condition5_HR_AVERAGE condition6_HR_AVERAGE condition7_HR_AVERAGE; condition1_Meta_AVERAGE condition2_Meta_AVERAGE condition3_Meta_AVERAGE condition4_Meta_AVERAGE condition5_Meta_AVERAGE condition6_Meta_AVERAGE condition7_Meta_AVERAGE];
 
-% output3
-load('D:\Lab\Loads Experiment\Case_2\LiTian\rec1_558.mat')
-load('D:\Lab\Loads Experiment\Case_2\LiTian\rec1_559.mat')
-load('D:\Lab\Loads Experiment\Case_2\LiTian\rec1_560.mat')
-load('D:\Lab\Loads Experiment\Case_2\LiTian\rec1_561.mat')
-load('D:\Lab\Loads Experiment\Case_2\LiTian\rec1_562.mat')
-load('D:\Lab\Loads Experiment\Case_2\LiTian\rec1_563.mat')
-load('D:\Lab\Loads Experiment\Case_2\LiTian\rec1_550.mat')
-load('D:\Lab\Loads Experiment\Case_2\LiTian\rec1_551.mat')
-load('D:\Lab\Loads Experiment\Case_2\LiTian\rec1_552.mat')
-load('D:\Lab\Loads Experiment\Case_2\LiTian\rec1_553.mat')
-load('D:\Lab\Loads Experiment\Case_2\LiTian\rec1_554.mat')
-load('D:\Lab\Loads Experiment\Case_2\LiTian\rec1_555.mat')
-load('D:\Lab\Loads Experiment\Case_2\LiTian\rec1_556.mat')
-load('D:\Lab\Loads Experiment\Case_2\LiTian\rec1_557.mat')
+%% output3
+load('F:\Lab\Loads Experiment\Case_2\LiTian\rec1_558.mat')
+load('F:\Lab\Loads Experiment\Case_2\LiTian\rec1_559.mat')
+load('F:\Lab\Loads Experiment\Case_2\LiTian\rec1_560.mat')
+load('F:\Lab\Loads Experiment\Case_2\LiTian\rec1_561.mat')
+load('F:\Lab\Loads Experiment\Case_2\LiTian\rec1_562.mat')
+load('F:\Lab\Loads Experiment\Case_2\LiTian\rec1_563.mat')
+load('F:\Lab\Loads Experiment\Case_2\LiTian\rec1_550.mat')
+load('F:\Lab\Loads Experiment\Case_2\LiTian\rec1_551.mat')
+load('F:\Lab\Loads Experiment\Case_2\LiTian\rec1_552.mat')
+load('F:\Lab\Loads Experiment\Case_2\LiTian\rec1_553.mat')
+load('F:\Lab\Loads Experiment\Case_2\LiTian\rec1_554.mat')
+load('F:\Lab\Loads Experiment\Case_2\LiTian\rec1_555.mat')
+load('F:\Lab\Loads Experiment\Case_2\LiTian\rec1_556.mat')
+load('F:\Lab\Loads Experiment\Case_2\LiTian\rec1_557.mat')
 condition1_HR=rms(rec1_550.Y(47).Data(end - 90000 + 1:1:end));
 condition1_Meta=rms(0.278.*rec1_550.Y(50).Data(end - 90000 + 1:1:end)+0.075.*rec1_550.Y(51).Data(end - 90000 + 1:1:end));
 condition2_HR=rms(rec1_551.Y(47).Data(end - 90000 + 1:1:end));
@@ -178,30 +178,30 @@ condition7_Meta_AVERAGE=(condition7_Meta+condition8_Meta)/2;
 
 output3=[condition1_HR_AVERAGE condition2_HR_AVERAGE condition3_HR_AVERAGE condition4_HR_AVERAGE condition5_HR_AVERAGE condition6_HR_AVERAGE condition7_HR_AVERAGE; condition1_Meta_AVERAGE condition2_Meta_AVERAGE condition3_Meta_AVERAGE condition4_Meta_AVERAGE condition5_Meta_AVERAGE condition6_Meta_AVERAGE condition7_Meta_AVERAGE];
 
-% output4
-load('D:\Lab\Loads Experiment\Case_2\LiZhuo\505_1.mat')
+%% output4
+load('F:\Lab\Loads Experiment\Case_2\LiZhuo\505_1.mat')
 rec505_1=rec;
-load('D:\Lab\Loads Experiment\Case_2\LiZhuo\506_1.mat')
+load('F:\Lab\Loads Experiment\Case_2\LiZhuo\506_1.mat')
 rec506_1=rec;
-load('D:\Lab\Loads Experiment\Case_2\LiZhuo\507_1.mat')
+load('F:\Lab\Loads Experiment\Case_2\LiZhuo\507_1.mat')
 rec507_1=rec;
-load('D:\Lab\Loads Experiment\Case_2\LiZhuo\508_1.mat')
+load('F:\Lab\Loads Experiment\Case_2\LiZhuo\508_1.mat')
 rec508_1=rec;
-load('D:\Lab\Loads Experiment\Case_2\LiZhuo\509_1.mat')
+load('F:\Lab\Loads Experiment\Case_2\LiZhuo\509_1.mat')
 rec509_1=rec;
-load('D:\Lab\Loads Experiment\Case_2\LiZhuo\510_1.mat')
+load('F:\Lab\Loads Experiment\Case_2\LiZhuo\510_1.mat')
 rec510_1=rec;
-load('D:\Lab\Loads Experiment\Case_2\LiZhuo\511_1.mat')
+load('F:\Lab\Loads Experiment\Case_2\LiZhuo\511_1.mat')
 rec511_1=rec;
-load('D:\Lab\Loads Experiment\Case_2\LiZhuo\513_1.mat')
+load('F:\Lab\Loads Experiment\Case_2\LiZhuo\513_1.mat')
 rec513_1=rec;
-load('D:\Lab\Loads Experiment\Case_2\LiZhuo\514_1.mat')
+load('F:\Lab\Loads Experiment\Case_2\LiZhuo\514_1.mat')
 rec514_1=rec;
-load('D:\Lab\Loads Experiment\Case_2\LiZhuo\rec1_516_1.mat')
-load('D:\Lab\Loads Experiment\Case_2\LiZhuo\rec1_517_1.mat')
-load('D:\Lab\Loads Experiment\Case_2\LiZhuo\rec1_518_1.mat')
-load('D:\Lab\Loads Experiment\Case_2\LiZhuo\rec1_512_1.mat')
-load('D:\Lab\Loads Experiment\Case_2\LiZhuo\rec1_515_1.mat')
+load('F:\Lab\Loads Experiment\Case_2\LiZhuo\rec1_516_1.mat')
+load('F:\Lab\Loads Experiment\Case_2\LiZhuo\rec1_517_1.mat')
+load('F:\Lab\Loads Experiment\Case_2\LiZhuo\rec1_518_1.mat')
+load('F:\Lab\Loads Experiment\Case_2\LiZhuo\rec1_512_1.mat')
+load('F:\Lab\Loads Experiment\Case_2\LiZhuo\rec1_515_1.mat')
 condition1_HR=rms(rec505_1.Y(47).Data(end - 90000 + 1:1:end));
 condition1_Meta=rms(0.278.*rec505_1.Y(50).Data(end - 90000 + 1:1:end)+0.075.*rec505_1.Y(51).Data(end - 90000 + 1:1:end));
 condition2_HR=rms(rec506_1.Y(47).Data(end - 90000 + 1:1:end));
@@ -249,21 +249,21 @@ condition7_Meta_AVERAGE=(condition7_Meta+condition8_Meta)/2;
 output4=[condition1_Meta_AVERAGE condition2_Meta_AVERAGE condition3_Meta_AVERAGE condition4_Meta_AVERAGE condition5_Meta_AVERAGE condition6_Meta_AVERAGE condition7_Meta_AVERAGE];
 % only use Meta Data, HR_data despoiled
 
-% output5
-load('D:\Lab\Loads Experiment\Case_2\Xu\rec1_745.mat')
-load('D:\Lab\Loads Experiment\Case_2\Xu\rec1_746.mat')
-load('D:\Lab\Loads Experiment\Case_2\Xu\rec1_747.mat')
-load('D:\Lab\Loads Experiment\Case_2\Xu\rec1_748.mat')
-load('D:\Lab\Loads Experiment\Case_2\Xu\rec1_749.mat')
-load('D:\Lab\Loads Experiment\Case_2\Xu\rec1_750.mat')
-load('D:\Lab\Loads Experiment\Case_2\Xu\rec1_751.mat')
-load('D:\Lab\Loads Experiment\Case_2\Xu\rec1_752.mat')
-load('D:\Lab\Loads Experiment\Case_2\Xu\rec1_753.mat')
-load('D:\Lab\Loads Experiment\Case_2\Xu\rec1_740.mat')
-load('D:\Lab\Loads Experiment\Case_2\Xu\rec1_741.mat')
-load('D:\Lab\Loads Experiment\Case_2\Xu\rec1_742.mat')
-load('D:\Lab\Loads Experiment\Case_2\Xu\rec1_743.mat')
-load('D:\Lab\Loads Experiment\Case_2\Xu\rec1_744.mat')
+%% output5
+load('F:\Lab\Loads Experiment\Case_2\Xu\rec1_745.mat')
+load('F:\Lab\Loads Experiment\Case_2\Xu\rec1_746.mat')
+load('F:\Lab\Loads Experiment\Case_2\Xu\rec1_747.mat')
+load('F:\Lab\Loads Experiment\Case_2\Xu\rec1_748.mat')
+load('F:\Lab\Loads Experiment\Case_2\Xu\rec1_749.mat')
+load('F:\Lab\Loads Experiment\Case_2\Xu\rec1_750.mat')
+load('F:\Lab\Loads Experiment\Case_2\Xu\rec1_751.mat')
+load('F:\Lab\Loads Experiment\Case_2\Xu\rec1_752.mat')
+load('F:\Lab\Loads Experiment\Case_2\Xu\rec1_753.mat')
+load('F:\Lab\Loads Experiment\Case_2\Xu\rec1_740.mat')
+load('F:\Lab\Loads Experiment\Case_2\Xu\rec1_741.mat')
+load('F:\Lab\Loads Experiment\Case_2\Xu\rec1_742.mat')
+load('F:\Lab\Loads Experiment\Case_2\Xu\rec1_743.mat')
+load('F:\Lab\Loads Experiment\Case_2\Xu\rec1_744.mat')
 condition1_HR=rms(rec1_740.Y(47).Data(end - 90000 + 1:1:end));
 condition1_Meta=rms(0.278.*rec1_740.Y(50).Data(end - 90000 + 1:1:end)+0.075.*rec1_740.Y(51).Data(end - 90000 + 1:1:end));
 condition2_HR=rms(rec1_741.Y(47).Data(end - 90000 + 1:1:end));
@@ -310,7 +310,18 @@ condition7_Meta_AVERAGE=(condition7_Meta+condition8_Meta)/2;
 
 output5=[condition1_HR_AVERAGE condition2_HR_AVERAGE condition3_HR_AVERAGE condition4_HR_AVERAGE condition5_HR_AVERAGE condition6_HR_AVERAGE condition7_HR_AVERAGE; condition1_Meta_AVERAGE condition2_Meta_AVERAGE condition3_Meta_AVERAGE condition4_Meta_AVERAGE condition5_Meta_AVERAGE condition6_Meta_AVERAGE condition7_Meta_AVERAGE];
 
-%output6
+%% output6
+load('F:\Lab\Loads Experiment\Case_2\Jian\rec1_474.mat')
+load('F:\Lab\Loads Experiment\Case_2\Jian\rec1_475.mat')
+load('F:\Lab\Loads Experiment\Case_2\Jian\rec1_465.mat')
+load('F:\Lab\Loads Experiment\Case_2\Jian\rec1_467.mat')
+load('F:\Lab\Loads Experiment\Case_2\Jian\rec1_468.mat')
+load('F:\Lab\Loads Experiment\Case_2\Jian\rec1_469.mat')
+load('F:\Lab\Loads Experiment\Case_2\Jian\rec1_470.mat')
+load('F:\Lab\Loads Experiment\Case_2\Jian\rec1_471.mat')
+load('F:\Lab\Loads Experiment\Case_2\Jian\rec1_472.mat')
+load('F:\Lab\Loads Experiment\Case_2\Jian\rec1_473.mat')
+
 Meta1data=[537.0220402	270.0107639
 676.7098541	340.2447776
 577.3762975	290.3005901
